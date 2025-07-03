@@ -1,0 +1,1 @@
+// Seed default user with hashed password
