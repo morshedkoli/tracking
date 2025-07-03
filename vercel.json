@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "buildCommand": "prisma generate && next build",
+  "installCommand": "npm install",
+  "framework": "nextjs",
+  "regions": ["all"],
+  "env": {
+    "NEXTAUTH_URL": "${VERCEL_URL}",
+    "NEXTAUTH_SECRET": "${NEXTAUTH_SECRET}"
+  },
+  "build": {
+    "env": {
+      "DATABASE_URL": "${DATABASE_URL}"
+    }
+  }
+}
